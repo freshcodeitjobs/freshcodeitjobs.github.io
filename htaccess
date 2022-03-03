@@ -1,0 +1,66 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page22488041.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^projects$ page22541038.html [NC]
+RewriteRule ^projects/$ page22541038.html [NC]
+
+RewriteRule ^clojure-development-team$ page22696380.html [NC]
+RewriteRule ^clojure-development-team/$ page22696380.html [NC]
+
+RewriteRule ^vacancies$ page22697826.html [NC]
+RewriteRule ^vacancies/$ page22697826.html [NC]
+
+RewriteRule ^contact$ page22697850.html [NC]
+RewriteRule ^contact/$ page22697850.html [NC]
+
+RewriteRule ^sales-manager$ page22995863.html [NC]
+RewriteRule ^sales-manager/$ page22995863.html [NC]
+
+RewriteRule ^clojure-developer$ page22996092.html [NC]
+RewriteRule ^clojure-developer/$ page22996092.html [NC]
+
+RewriteRule ^qa-engineer$ page22996273.html [NC]
+RewriteRule ^qa-engineer/$ page22996273.html [NC]
+
+RewriteRule ^thank-you$ page23372596.html [NC]
+RewriteRule ^thank-you/$ page23372596.html [NC]
+
+RewriteRule ^automation-qa-engineer-java-selenium$ page23734302.html [NC]
+RewriteRule ^automation-qa-engineer-java-selenium/$ page23734302.html [NC]
+
+RewriteRule ^project-manager$ page24886925.html [NC]
+RewriteRule ^project-manager/$ page24886925.html [NC]
+
+RewriteRule ^vue-js-developer$ page24895314.html [NC]
+RewriteRule ^vue-js-developer/$ page24895314.html [NC]
+
+RewriteRule ^accountant$ page24948097.html [NC]
+RewriteRule ^accountant/$ page24948097.html [NC]
+
+RewriteRule ^junior-backend-developer-node$ page25151202.html [NC]
+RewriteRule ^junior-backend-developer-node/$ page25151202.html [NC]
+
+RewriteRule ^financial-analyst$ page25430518.html [NC]
+RewriteRule ^financial-analyst/$ page25430518.html [NC]
+
+RewriteRule ^junior-js-developer$ page25670291.html [NC]
+RewriteRule ^junior-js-developer/$ page25670291.html [NC]
+
+RewriteRule ^strong-junior-full-stack-js-developer$ page25817300.html [NC]
+RewriteRule ^strong-junior-full-stack-js-developer/$ page25817300.html [NC]
+
+RewriteRule ^privacy_policy-ua$ page25844977.html [NC]
+RewriteRule ^privacy_policy-ua/$ page25844977.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild6639-3362-4361-a562-323136366136/favicon.ico [R=302,L]
+
